@@ -1,4 +1,4 @@
-/* $Id: promo_discount_view.css 3449 2013-05-13 07:16:21Z zhaoff@qidapp.com $ */
+/* $Id: promo_discount_view.css 3452 2013-05-13 08:14:14Z pengrl@qidapp.com $ */
 body {
 	background: url(//s6.mogujie.cn/img/bg-v3.png) repeat 0 0;
 }
@@ -50,7 +50,6 @@ body {
 .item .price span.pull-right {
     color: #999;
 	font-size: 12px;
-    text-decoration: line-through;
 }
 
 .item .price span.discount {

@@ -1,5 +1,5 @@
 /**
- * $Id: promo_discount_view.js 3440 2013-05-11 02:17:15Z pengrl@qidapp.com $
+ * $Id: promo_discount_view.js 3452 2013-05-13 08:14:14Z pengrl@qidapp.com $
  */
 var type = "0";
 var seller_cids = "0";
@@ -17,7 +17,7 @@ var render_item = function(){
 			if (~~item[7] == 7) {
 				_span = '<div class="flag"><span class="label">会员折扣</span></div>';
 			}
-			$('<div class="price"><span class="pull-left">¥ <b>' + parseFloat(item[5]).toFixed(2) + '</b> <span class="discount">'+item[6]+'折</span></span><span class="pull-right">¥ '+parseFloat(item[2]).toFixed(2)+'</span><div class="clearfix"></div>'+_span+'</div>').appendTo(_div);
+			$('<div class="price"><span class="pull-left">¥ <b>' + parseFloat(item[5]).toFixed(2) + '</b> <span class="discount">'+item[6]+'折</span></span><span class="pull-right">原价 <del>'+parseFloat(item[2]).toFixed(2)+'</del></span><div class="clearfix"></div>'+_span+'</div>').appendTo(_div);
 		} else {
 			var _span = "";
 			var promoC = item[6].split(';');
