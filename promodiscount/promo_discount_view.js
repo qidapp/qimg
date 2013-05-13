@@ -53,7 +53,7 @@ $(document).ready(function(){
 	});
 	
 	$('#search_self').click(function(){
-		$('#search').attr('action', 'http://localhost:8080/uc/TaobaoSearchEncode');
+		$('#search').attr('action', 'http://itools.qdss.org/app/TaobaoSearchEncode');
 	});
 	
 	$('#share').attr('href', 'http://www.jiathis.com/send/?webid=tsina&url='+encodeURIComponent($('#userName').attr('href'))+'&title='+encodeURIComponent("好多折扣商品，赶快来看看吧！#掌柜工具箱#")+'&uid=1714783&appkey=3822648575');
