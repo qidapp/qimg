@@ -1,4 +1,4 @@
-/* $Id: promo_discount_view.css 3436 2013-05-10 13:34:02Z zhaoff@qidapp.com $ */
+/* $Id: promo_discount_view.css 3449 2013-05-13 07:16:21Z zhaoff@qidapp.com $ */
 body {
 	background: url(//s6.mogujie.cn/img/bg-v3.png) repeat 0 0;
 }
@@ -51,6 +51,12 @@ body {
     color: #999;
 	font-size: 12px;
     text-decoration: line-through;
+}
+
+.item .price span.discount {
+	font-size:12px;
+	color:#999;
+	margin-left:2px;
 }
 
 .item .flag {
@@ -148,9 +154,11 @@ body {
 
 #tip {
     text-align: center;
-    line-height: 34px;
+    line-height: 36px;
     border: 1px solid #ccc;
 	background-color: #f9f9f9;
+	margin: 60px 0;
+	margin-bottom: 72px;
 }
 
 .footer {
@@ -159,6 +167,7 @@ body {
     text-align: center;
     padding-top: 30px;
 	margin-bottom: 3px;
+	margin-top: 9px;
 }
 
 .footer a {
