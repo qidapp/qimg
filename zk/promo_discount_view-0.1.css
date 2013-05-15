@@ -1,0 +1,179 @@
+/* $Id: promo_discount_view.css 3489 2013-05-15 02:06:58Z pengrl@qidapp.com $ */
+body {
+	background: url(//s6.mogujie.cn/img/bg-v3.png) repeat 0 0;
+}
+
+.row-fluid .span3 {
+	width: 24.25%;
+}
+.row-fluid [class*="span"] {
+	margin-left: 1%;
+}
+
+#main {
+    width: 980px;
+}
+
+.item {
+    margin: 15px 0px;
+    border: 1px solid #dfdfdf;
+    padding: 6px;
+    cursor: default;
+    background-color: #fff;
+}
+
+.item:hover {
+    border-color: #ff3e5d;
+    box-shadow: 0 1px 6px #bbb;
+}
+
+.item .img {
+    text-align: center;
+    display: block;
+}
+
+.item .title {
+    display: block;
+    margin: 4px 2px;
+	line-height: 1.5;
+}
+
+.item .price {
+    margin: 2px;
+}
+
+.item .price span {
+    color: #f90;
+    font-size: 15px;
+}
+
+.item .price span.pull-right {
+    color: #999;
+	font-size: 12px;
+}
+
+.item .price span.discount {
+	font-size:12px;
+	color:#999;
+	margin-left:2px;
+}
+
+.item .flag {
+    margin: 4px 2px;
+    border-top: 1px dotted #ccc;
+    padding-top: 8px;
+}
+
+.item .flag .label {
+    font-size: 12px;
+    color: #89A940;
+    font-weight: normal;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    background-color: #f6f8ee;
+    text-shadow: none;
+}
+
+.top {
+    text-align: center;
+	margin-bottom: 18px;
+	background-color: #F2F0F0;
+	box-shadow: 0 0 2px #aaa;
+	overflow: hidden;
+}
+
+.top .banner,.top .shop,.top .search,.top .share {
+	float: left;
+	border-right: 1px solid #dfdfdf;
+	height: 60px;
+	overflow: hidden;
+}
+
+.top .banner {
+    width: 200px;
+	height: 60px;
+	border-width: 0;
+}
+
+.top .shop {
+    width: 140px;
+	color: #555;
+}
+
+.top .shop a {
+	display: block;
+	margin-top: 10px;
+	color: #666;
+}
+
+.top .search {
+    padding: 0 16px;
+	border-left: 1px solid #fff;
+	margin: 0;
+}
+.top .search .controls {
+	margin-top: 16px;
+}
+
+.top .share {
+	border-left: 1px solid #fff;
+	border-right: 0 none;
+	width: 260px;
+}
+
+.top .share a {
+	display: block;
+	line-height: 60px;
+	color: #FAA732;
+}
+
+#promoType {
+    border: 1px solid #dfdfdf;
+	border-top-width: 2px;
+    line-height: 26px;
+    padding: 12px;
+	padding-top: 10px;
+    background-color: #fff;
+	width:954px;
+	overflow:hidden;
+	top:0px;
+}
+
+#promoType span {
+    width: 60px;
+	color: #999;
+}
+
+#promoType .filterCon {
+	width:900px;
+}
+
+#promoType a {
+	margin-left:8px;
+	display: inline-block;
+	padding:0px 4px;
+}
+
+#tip {
+    text-align: center;
+    line-height: 36px;
+    border: 1px solid #ccc;
+	background-color: #f9f9f9;
+	margin: 60px 0;
+	margin-bottom: 72px;
+}
+
+.footer {
+    background: url(//img05.qidapp.cn/zk/footer_tao.png) no-repeat 0 0;
+    color: #999;
+    text-align: center;
+    padding-top: 30px;
+	margin-bottom: 3px;
+	margin-top: 9px;
+}
+
+.footer a {
+	color: #f70 !important;
+}
+
+.active{color:#fff;background-color:#27a;}
