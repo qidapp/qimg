@@ -1,4 +1,4 @@
-/* $Id: promo_discount_view.css 3489 2013-05-15 02:06:58Z pengrl@qidapp.com $ */
+/* $Id: promo_discount_view.css 3494 2013-05-15 12:25:36Z zhaoff@qidapp.com $ */
 body {
 	background: url(//s6.mogujie.cn/img/bg-v3.png) repeat 0 0;
 }
@@ -79,6 +79,7 @@ body {
 	margin-bottom: 18px;
 	background-color: #F2F0F0;
 	box-shadow: 0 0 2px #aaa;
+	width: 979px;
 	overflow: hidden;
 }
 
@@ -136,7 +137,12 @@ body {
     background-color: #fff;
 	width:954px;
 	overflow:hidden;
-	top:0px;
+	top:-2px;
+}
+
+#promoType.float {
+	box-shadow: 1px 2px 8px rgba(0,0,0,.2);
+	background-color: #fcfcfc;
 }
 
 #promoType span {
@@ -152,6 +158,12 @@ body {
 	margin-left:8px;
 	display: inline-block;
 	padding:0px 4px;
+	outline: none;
+	text-decoration: none !important;
+}
+
+#promoType a:hover, .active {
+	color: #f90 !important;
 }
 
 #tip {
@@ -175,5 +187,3 @@ body {
 .footer a {
 	color: #f70 !important;
 }
-
-.active{color:#fff;background-color:#27a;}

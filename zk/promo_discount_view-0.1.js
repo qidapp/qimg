@@ -1,21 +1,25 @@
 /**
- * $Id: promo_discount_view.js 3490 2013-05-15 02:56:13Z pengrl@qidapp.com $
+ * $Id: promo_discount_view.js 3494 2013-05-15 12:25:36Z zhaoff@qidapp.com $
  */
 var type = "0";
 var seller_cids = "0";
 var promo_limit_count = 0;
 var promo_fullsend_count = 0;
+var promo_freepost_count = 0;
 var catIds = {};
 var render_item = function(){
 	var idx = 0;
 	$(item_data).each(function(ind, item){
-		if ((type != "0" && type.indexOf(item[7]) < 0) || (seller_cids != "0" && seller_cids.indexOf(item[8]) < 0)) {
+		if ((type != "0" && type != "5" && type.indexOf(item[7]) < 0) || (seller_cids != "0" && seller_cids.indexOf(item[8]) < 0) || (type == "5" && item[6].indexOf('免邮') < 0)) {
 			return true;
 		}
 		if (~~item[7] != 4 && ~~item[7] != 5) {
 			promo_limit_count++;
 		} else {
 			promo_fullsend_count++;
+			if (item[6].indexOf('免邮') >= 0) {
+				promo_freepost_count++;
+			}
 		}
 		if (!!!catIds[item[8]]) { catIds[item[8]] = 1; }
 		else { catIds[item[8]] = catIds[item[8]] + 1;}
@@ -83,8 +87,10 @@ $(document).ready(function(){
 	$(window).scroll(function(){
 	    if($(document).scrollTop() >= 78) { 
 	    	$('.top').css('margin-bottom',$('#promoType').height() + 38);
+	    	$('#promoType').addClass('float');
 	    } else {
 	    	$('.top').css('margin-bottom', 18);
+	    	$('#promoType').removeClass('float');
 	    }
 	});
 	
