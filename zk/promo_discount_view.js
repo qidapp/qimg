@@ -116,7 +116,7 @@ var get_cids = function() {
 			}
 		});
 		if (!!nodeHasItem) {
-			aHtml += '<a href="#'+item.name+'" _value=",'+_aValue+',">' + item.name + ' <span>(' + count + ')</span></a>';
+			aHtml += '<a href="#'+item.name+'" _value=",'+_aValue+',">' + item.name + '</a>';
 		}
 	});
 	$(aHtml).appendTo($('#seller_cids'));
