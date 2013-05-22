@@ -1,4 +1,4 @@
-/* $Id: promo_discount_view.css 3542 2013-05-20 16:57:13Z zhaoff@qidapp.com $ */
+/* $Id: promo_discount_view.css 3571 2013-05-22 04:35:08Z zhaoff@qidapp.com $ */
 body {
 	background: url(//s6.mogujie.cn/img/bg-v3.png) repeat 0 0;
 }
@@ -155,7 +155,7 @@ body {
 }
 
 #promoType a {
-	margin-left:8px;
+	margin-left:6px;
 	display: inline-block;
 	padding:0px 4px;
 	outline: none;
