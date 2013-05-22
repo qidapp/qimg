@@ -87,11 +87,13 @@ $(document).ready(function(){
 	$(window).scroll(function(){
 	    if($(document).scrollTop() >= 78) {
 	    	if (!$('#promoType').hasClass('float')){
-	    		$('#item-area').css('margin-top', $('#promoType').height() + 42);
+//	    		$('#item-area').css('margin-top', $('#promoType').height() + 42);
+	    		$('.row-fluid').eq(0).css('margin-top', $('#promoType').height() + 42);
 	    		$('#promoType').addClass('float');
 	    	}
 	    } else {
-	    	$('#item-area').css('margin-top', 0);
+//	    	$('#item-area').css('margin-top', 0);
+	    	$('.row-fluid').css('margin-top', 0);
 	    	$('#promoType').removeClass('float');
 	    }
 	});
@@ -118,7 +120,7 @@ var get_cids = function() {
 			}
 		});
 		if (!!nodeHasItem) {
-			aHtml += '<a href="#'+item.name+'" _value=",'+_aValue+',">' + item.name + ' <span>(' + count + ')</span></a>';
+			aHtml += '<a href="#'+item.name+'" _value=",'+_aValue+',">' + item.name + ' <span class="hide">(' + count + ')</span></a>';
 		}
 	});
 	$(aHtml).appendTo($('#seller_cids'));
