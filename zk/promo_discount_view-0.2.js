@@ -11,7 +11,7 @@ var itemIndex = 0;
 var count = 0, lastCount = 0;
 var render_item = function(){
 	$(item_data).each(function(ind, item){
-		if (itemIndex == item_data.length - 1) {
+		if (itemIndex > 0 && itemIndex == item_data.length - 1) {
 			return false;
 		}
 		if (itemIndex != 0 && ind < itemIndex) {
